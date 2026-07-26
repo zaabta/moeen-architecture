@@ -1,240 +1,350 @@
-🚀 MOEEN AI Architecture
+# 🚀 MOEEN AI Architecture
 
-AI-Native Recruitment Platform Architecture & System Design
+> **AI-Native Recruitment Platform**  
+> Comprehensive Architecture, Business Analysis, System Design, and Technical Documentation.
 
-⸻
+---
 
-📖 Overview
+## 📖 About
 
-MOEEN AI is an AI-native Software-as-a-Service (SaaS) recruitment platform designed to modernize and automate the hiring process.
+**MOEEN AI** is an AI-native Software-as-a-Service (SaaS) recruitment platform designed to automate and optimize the hiring lifecycle using Artificial Intelligence.
 
-Unlike traditional Applicant Tracking Systems (ATS), MOEEN AI actively participates in recruitment by leveraging Artificial Intelligence to analyze resumes, evaluate candidates, assist recruiters, and automate hiring workflows.
+Unlike traditional Applicant Tracking Systems (ATS), MOEEN AI actively participates in recruitment by analyzing resumes, matching candidates to job requirements, generating AI-powered evaluations, managing recruitment pipelines, and assisting recruiters throughout the hiring process.
 
-This repository contains the complete software architecture, business analysis, system design, and technical documentation for the MOEEN AI platform.
+This repository serves as the **Single Source of Truth (SSOT)** for the entire project.
 
-It serves as the Single Source of Truth (SSOT) for everyone involved in the project.
+It contains all business requirements, software architecture, system design, AI architecture, database design, APIs, infrastructure decisions, and implementation guidelines.
 
-⸻
+---
 
-🎯 Vision
+# 🎯 Vision
 
-Build the leading AI-powered recruitment platform in the Middle East by enabling organizations to hire faster, smarter, and more objectively through Artificial Intelligence.
+To become the leading AI-powered recruitment platform in the Middle East by enabling organizations to hire faster, smarter, and more objectively through Artificial Intelligence.
 
-⸻
+---
 
-💡 Mission
+# 💡 Mission
 
-Empower recruiters with intelligent AI tools that automate repetitive recruitment tasks while keeping hiring decisions under human control.
+Empower recruiters with intelligent AI tools that automate repetitive recruitment tasks while ensuring that final hiring decisions always remain under human control.
 
-⸻
+---
 
-✨ Core Features
+# ✨ Key Features
 
-* Multi-Tenant SaaS Architecture
-* Company & Workspace Management
-* Job Management
-* AI Job Description Assistant
-* Public Career Pages
-* Candidate Applications
-* Resume Parsing
-* AI Candidate Matching
-* AI Candidate Scoring
-* Candidate Ranking
-* Dynamic Hiring Pipelines
-* Recruiter Notes
-* Bulk Resume Upload
-* Candidate Reports
-* AI Interview Platform (Future)
-* Workflow Automation (Future)
-* Analytics Dashboard (Future)
+### Recruitment Management
 
-⸻
+- Company Management
+- Multi-Tenant SaaS
+- Job Management
+- Dynamic Hiring Pipelines
+- Candidate Management
+- Recruiter Notes
+- Bulk Resume Upload
 
-🏗️ High-Level Workflow
+### AI Features
 
-Company
-↓
-Create Job
-↓
-AI Job Assistant
-↓
-Publish Job
-↓
-Candidate Application
-↓
-Resume Upload
-↓
-CV Parsing
-↓
-AI Analysis
-↓
-Candidate Scoring
-↓
-Pipeline
-↓
-Recruiter Review
-↓
-Interview
-↓
-Hiring Decision
+- AI Job Description Assistant
+- Resume Parsing
+- Candidate Profile Extraction
+- AI Candidate Matching
+- AI Candidate Scoring
+- AI Hiring Recommendations
+- AI Candidate Reports
 
-⸻
+### Future Features
 
-📚 Documentation Structure
+- AI Voice Interviews
+- AI Video Interviews
+- Workflow Automation
+- AI Recruiter Agent
+- AI Analytics Dashboard
+- Multi-Agent Collaboration
 
-Document	Description
-01	Introduction
-02	Business Requirements
-03	Functional Requirements
-04	Non-Functional Requirements
-05	Solution Architecture
-06	Layered Architecture
-07	Domain Workflow
-08	RBAC & Security
-09	Database Design
-10	REST API Design
-11	UI Approach
-12	Caching Strategy
-13	Async Processing
-14	Notification System
-15	Monitoring & Logging
-16	Deployment
-17	AI Architecture
-18	Future Improvements
+---
 
-⸻
+# 🏗 High-Level Workflow
 
-🧠 Core Business Flow
-
+```text
 Company
     │
-    └── Jobs
-            │
-            ├── Pipeline
-            │
-            ├── Applications
-            │
-            ├── AI Evaluation
-            │
-            ├── Interviews
-            │
-            └── Hiring
+    ▼
+Create Job
+    │
+    ▼
+AI Job Assistant
+    │
+    ▼
+Publish Job
+    │
+    ▼
+Candidate Application
+    │
+    ▼
+Resume Upload
+    │
+    ▼
+CV Processing
+    │
+    ▼
+Resume Parsing
+    │
+    ▼
+AI Evaluation
+    │
+    ▼
+Candidate Scoring
+    │
+    ▼
+Pipeline Management
+    │
+    ▼
+Recruiter Review
+    │
+    ▼
+Interview Process
+    │
+    ▼
+Hiring Decision
+```
 
-⸻
+---
 
-🛠️ Architecture Principles
+# 📂 Repository Structure
 
-The platform is designed around the following principles:
+```text
+moeen-architecture/
+│
+├── README.md
+│
+├── docs/
+│   ├── 01-introduction.md
+│   ├── 02-business-requirements.md
+│   ├── 03-functional-requirements.md
+│   ├── 04-non-functional-requirements.md
+│   ├── 05-solution-architecture.md
+│   ├── 06-layered-architecture.md
+│   ├── 07-domain-workflow.md
+│   ├── 08-rbac-and-security.md
+│   ├── 09-database-design.md
+│   ├── 10-rest-api-design.md
+│   ├── 11-ui-approach.md
+│   ├── 12-caching-strategy.md
+│   ├── 13-async-processing.md
+│   ├── 14-notification-system.md
+│   ├── 15-monitoring-and-logging.md
+│   ├── 16-deployment.md
+│   ├── 17-ai-architecture.md
+│   └── 18-future-improvements.md
+│
+├── diagrams/
+│
+├── db/
+│   ├── schema.prisma
+│   ├── schema.dbml
+│   └── migrations/
+│
+└── api/
+    └── openapi.yaml
+```
 
-* AI First
-* Cloud Native
-* API First
-* Security by Design
-* Multi-Tenant SaaS
-* Event-Driven Processing
-* Scalable Architecture
-* Domain-Driven Design (DDD)
-* Human-in-the-Loop AI
+---
 
-⸻
+# 📚 Documentation Roadmap
 
-📂 Repository Structure
+| # | Document |
+|---|----------|
+| 01 | Introduction |
+| 02 | Business Requirements |
+| 03 | Functional Requirements |
+| 04 | Non-Functional Requirements |
+| 05 | Solution Architecture |
+| 06 | Layered Architecture |
+| 07 | Domain Workflow |
+| 08 | RBAC & Security |
+| 09 | Database Design |
+| 10 | REST API Design |
+| 11 | UI Approach |
+| 12 | Caching Strategy |
+| 13 | Async Processing |
+| 14 | Notification System |
+| 15 | Monitoring & Logging |
+| 16 | Deployment |
+| 17 | AI Architecture |
+| 18 | Future Improvements |
 
-docs/
-diagrams/
-db/
-api/
+---
 
-⸻
+# 🧠 Architecture Principles
 
-🚦 Documentation Workflow
+The platform follows modern software architecture best practices.
 
-Every feature follows the same design process.
+- AI-First Design
+- Cloud-Native Architecture
+- API-First Development
+- Domain-Driven Design (DDD)
+- Event-Driven Processing
+- Security by Design
+- Multi-Tenant SaaS
+- Human-in-the-Loop AI
+- Scalable & Modular Architecture
+- Clean Architecture Principles
 
-Business
-↓
-Requirements
-↓
-Architecture
-↓
-Database
-↓
-API
-↓
+---
+
+# 📌 Core Business Modules
+
+- Authentication & Authorization
+- Company Management
+- User Management
+- Job Management
+- AI Job Assistant
+- Candidate Management
+- Resume Processing
+- AI Candidate Evaluation
+- Pipeline Management
+- Recruiter Notes
+- Candidate Timeline
+- Notifications
+- Reporting
+- AI Interview Platform *(Future)*
+- Workflow Automation *(Future)*
+
+---
+
+# 🚦 Documentation Workflow
+
+Every feature in MOEEN AI follows the same design process.
+
+```text
+Business Analysis
+        │
+        ▼
+Business Requirements
+        │
+        ▼
+Functional Requirements
+        │
+        ▼
+Solution Architecture
+        │
+        ▼
+Database Design
+        │
+        ▼
+REST API Design
+        │
+        ▼
 Implementation
-↓
+        │
+        ▼
 Testing
-↓
+        │
+        ▼
 Deployment
+```
 
-No implementation should begin before the relevant documentation has been completed.
+No implementation should begin before the corresponding documentation has been completed and reviewed.
 
-⸻
+---
 
-🤖 AI-Driven Development
+# 🤖 AI-Driven Development
 
-This repository is intentionally designed to work with modern AI coding assistants.
+This repository is designed to work seamlessly with modern AI coding assistants such as:
 
-Each document will include:
+- ChatGPT
+- Cursor
+- Claude Code
+- GitHub Copilot
+- Gemini
 
-* Business Context
-* Business Rules
-* Functional Requirements
-* Related APIs
-* Related Database Entities
-* Implementation Notes
-* Traceability References
+Each document will contain:
 
-This allows AI assistants such as ChatGPT, Cursor, Claude Code, and GitHub Copilot to understand the project before generating code.
+- Business Context
+- Business Rules
+- Functional Requirements
+- Related Components
+- Database References
+- API References
+- Implementation Notes
+- Traceability Links
 
-⸻
+This enables AI tools to understand the project before generating production-ready code.
 
-📌 Current Project Status
+---
 
-Module	Status
-Business Analysis	🟡 In Progress
-Requirements	⏳ Planned
-Architecture	⏳ Planned
-Database Design	⏳ Planned
-API Design	⏳ Planned
-AI Architecture	⏳ Planned
-Infrastructure	⏳ Planned
+# 📈 Project Status
 
-⸻
+| Area | Status |
+|------|--------|
+| Business Analysis | 🟡 In Progress |
+| Requirements | ⏳ Planned |
+| Architecture | ⏳ Planned |
+| Database Design | ⏳ Planned |
+| REST API | ⏳ Planned |
+| Infrastructure | ⏳ Planned |
+| AI Architecture | ⏳ Planned |
 
-🗺️ Roadmap
+---
 
-Phase 1
+# 🛣 Development Roadmap
 
-* Business Analysis
-* Requirements
-* Architecture
+## Phase 1 — Analysis
 
-Phase 2
+- Business Analysis
+- Requirements Engineering
+- Domain Modeling
 
-* Database
-* REST API
-* Backend Services
+## Phase 2 — Design
 
-Phase 3
+- Software Architecture
+- Database Design
+- REST API Design
+- Security Design
 
-* Frontend
-* AI Services
-* Dashboard
+## Phase 3 — Development
 
-Phase 4
+- Backend Services
+- Frontend Applications
+- AI Services
 
-* AI Interviews
-* Workflow Automation
-* Analytics
-* Integrations
+## Phase 4 — Infrastructure
 
-⸻
+- Docker
+- Kubernetes
+- CI/CD
+- Monitoring
+- Logging
 
-📄 License
+## Phase 5 — AI
 
-This repository is intended for the architecture and design of the MOEEN AI platform.
+- AI Interview
+- Workflow Automation
+- AI Agents
+- Advanced Analytics
 
-⸻
+---
 
-“Design First. Build Second. Scale Forever.”
+# 🤝 Contributing
+
+Documentation follows a **Design First** approach.
+
+Every new feature should include:
+
+- Business Requirement
+- Functional Requirement
+- Architecture Design
+- Database Changes
+- API Changes
+- Security Considerations
+
+before implementation begins.
+
+---
+
+# 📄 License
+
+This repository contains the architecture and design documentation for the **MOEEN AI** platform.
+
+---
+
+> **"Design First. Build Second. Scale Forever."**
